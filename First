@@ -14,3 +14,24 @@ LIKE and BETWEEN are special operators that can be used in a WHERE clause.
 AND and OR are special operators that you can use with WHERE to tilter the query on two or more conditions.
 ORDER BY lets you sort the results of the query in either ascending or descending order.
 LIMIT lets you specify the maximum number of rows that the query will return.
+
+Aggregate functions
+COUNT takes the name of a column(s) as an argument and counts the number of rows where the values(s) is not NULL.
+GROUP BY is a clause used with aggregate functions to bombine data from one or more columns.
+SUM() takes the column name as an argument and returns the sum of all the values in that column.
+MAX() ...largest value.
+MIN() ...smallest value.
+AVG() ...average value.
+ROUND() takes two arguments, a clumn name and the number of decimal places to round the values in that column.
+
+Multiple tables
+a table can not have more than one PRIMARY KEY column.
+Primary Key is a column that serves a unique identifier for row in the table. Values in this 
+  column must be unique and cannot be NULL.
+Foreign Key is a column that contains the primary key to another table in the database. It is
+  used to identify a particular row in the referenced table.
+Joins are used in SQL to combine data from multiple tables.
+INNER JOIN will combine rows from different tables if the join condition is true.
+LEFT OUTER JOIN will return every row in the left table, and if the join condition is not met, NULL 
+  values are used to fill in the columns from the right table.
+AS is a keyword in SQL that allows you to rename a column or table in the result set using an alias.
